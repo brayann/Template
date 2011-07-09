@@ -1,0 +1,49 @@
+.wrapper {
+	width: 900px;
+	margin: auto;
+}
+
+.border {
+	border: 3px solid #ededed;
+}
+
+#wrapper {
+	background: #ccc;
+	min-height: 200px;
+}
+#header{
+	margin-bottom: 10px;
+}
+
+#wrapper ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+#wrapper ul li {
+	width: auto;
+	float: left;
+	margin-right: 30px;
+	border: 1px solid #ededed;
+	border-radius:8px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+h3{
+	text-align: center;
+}
+
+#wrapper input {
+	text-align: center;
+}
+
+#footer {
+	font-size: 10px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#main_content{
+	padding: 10px;
+}

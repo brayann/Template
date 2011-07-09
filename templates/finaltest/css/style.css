@@ -1,0 +1,40 @@
+.wrapper {
+	width: 900px;
+	margin: auto;
+	font-family: Monaco,verdana, sans-serif;
+}
+
+.border {
+	border: 5px solid #596d9b;
+}
+
+#wrapper {
+	background: #7092BE;
+	min-height: 200px;
+}
+
+#wrapper ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+#wrapper ul li {
+	width: auto;
+	float: left;
+	margin-right: 30px;
+	_background: #c4c4c4;
+	border: 2px solid #d9e2ef;
+	border-radius:8px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+h3{
+	text-align: center;
+}
+#main_content{
+	padding: 10px;
+}
+#header{
+	margin-bottom: 10px;
+}

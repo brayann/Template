@@ -1,0 +1,12 @@
+/*
+	Esse CSS irá carregar no caso de nao carregar nenhum template
+	This CSS will load just in case that none template is loaded
+*/
+
+.wrapper{
+	width: 900px;
+	margin: auto;
+}
+.border-selected{
+	border-color: black !important;
+}

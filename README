@@ -1,0 +1,58 @@
+Template Library made by Brayan Rastelli
+<brayann@vista.aero>
+<www.brayanrastelli.com>
+<twitter.com/heybrayan>
+
+Create a database, and create the following tables:
+
+
+--
+-- Table structure for table `template`
+--
+
+CREATE TABLE `template` (
+  `template_id` int(11) NOT NULL AUTO_INCREMENT,
+  `path` varchar(100) NOT NULL DEFAULT 'default',
+  `active` tinyint(1) NOT NULL DEFAULT '1',
+  `name` varchar(50) NOT NULL DEFAULT 'New template',
+  `preview_image` varchar(50) NOT NULL,
+  `default` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`template_id`),
+  KEY `template_id` (`template_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT '1',
+  `template_id` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`user_id`),
+  KEY `template` (`template_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+Add a user with pass hashed by SHA1
+
+Add a template
+
+As the following examples
+
+--
+-- Dumping data for table `template`
+--
+
+INSERT INTO `template` VALUES(1, 'default', 1, 'Default Template', 'preview.png', 1);
+INSERT INTO `template` VALUES(2, 'finaltest', 1, 'Final Template', 'preview.png', 0);
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` VALUES(1, 'Brayan', 1, 2);
+
+View the folder structures to place the images, css and markup of the template
